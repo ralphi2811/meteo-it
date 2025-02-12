@@ -1,0 +1,16 @@
+# Fichier de prompt pour la génération de rapports
+prompt.md
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de configuration d'éditeur
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fichiers temporaires
+*.tmp
+*.temp
