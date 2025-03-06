@@ -6,10 +6,10 @@
 
 ### Jean Michel ADELIN
 - État d'esprit : 🌧️ Préoccupé
-- Points positifs : CDC Connecteur URCOOPA toujours terminé (100%)
-- Points négatifs : Retard significatif sur le DEV Connecteur URCOOPA
+- Points positifs : CDC Connecteur URCOOPA initialement terminé (100%)
+- Points négatifs : CDC Connecteur URCOOPA remis en question par le GESIC, pourcentage de changements à apporter inconnu
 - Charge de travail : Élevée, avec des contraintes externes
-- Prochains défis : Rattrapage du retard sur le DEV Connecteur URCOOPA
+- Prochains défis : Adaptation aux nouvelles exigences et rattrapage du retard sur le DEV Connecteur URCOOPA
 
 ### Jimmy CHABOT
 - État d'esprit : 🌥️ Mitigé
@@ -21,8 +21,9 @@
 ### Sarah MAILLOT
 - État d'esprit : 🌤️ Bon malgré les contraintes
 - Points positifs : Test Matériel de caisse finalisé (100%), progression sur la vérification réseau WIFI & zones
-- Points négatifs : Blocage sur la Sortie Réseau GESIC pour raisons politiques
+- Points négatifs : Blocage sur la Sortie Réseau GESIC pour raisons politiques, ralentissement dû à la remise en conformité post-cyclone
 - Charge de travail : Élevée, réorientation des priorités nécessaire
+- Tâches supplémentaires : État des lieux, analyse des dégâts, devis et remplacement du matériel défectueux suite au cyclone
 
 ### Raphael AUBERLET
 - État d'esprit : 🌥️ Mitigé
@@ -46,9 +47,9 @@
 - Sortie Réseau GESIC (5%, bloquée pour raisons politiques)
 
 ### d. Tâches en Retard ⚠️
-- DEV Connecteur URCOOPA (retard de 15 jours minimum sur la date prévue)
+- DEV Connecteur URCOOPA (retard de 15 jours actuellement sur la date prévue, probable 30j selon modifications)
 - Sortie Réseau GESIC (bloquée, aucune progression possible actuellement)
-- Tous les connecteurs dépendant des informations RDT (effet domino du blocage)
+- Tous les connecteurs transitaires dépendant des informations Arkeup (effet domino du blocage)
 
 ### e. Tâches à Venir 🕗
 - CDC Connecteur Milkoffice (reporté)
@@ -58,7 +59,7 @@
 
 ## 3. 📊 Évaluation Globale du Projet
 
-- Synthèse : Impact significatif du cyclone et des blocages externes sur l'avancement global
+- Synthèse : Impact significatif du cyclone et des blocages externes sur l'avancement global, remise en question de travaux déjà finalisés
 - Répartition :
   * 40% tâches terminées (10/25, +4% depuis le rapport du 19/02)
   * 24% tâches en cours (6/25)
@@ -67,6 +68,8 @@
   * Non-réception des livraisons Arkeup
   * Négociations avec le GESIC au point mort
   * Tests complémentaires nécessaires au niveau de la caisse
+  * Remise en question du CDC Connecteur URCOOPA par le GESIC
+  * Remise en conformité des infrastructures suite au cyclone
 
 ## 4. 💡 Recommandations et Actions
 
