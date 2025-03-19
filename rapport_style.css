@@ -1,0 +1,158 @@
+/* Style moderne pour les rapports hebdomadaires */
+
+body {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2em;
+    color: #333;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #2c3e50;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.3em;
+    text-align: center;
+    color: #2980b9;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.2em;
+    color: #3498db;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #16a085;
+}
+
+ul, ol {
+    padding-left: 2em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    border-left: 4px solid #3498db;
+    padding-left: 1em;
+    margin-left: 0;
+    color: #555;
+}
+
+code {
+    background-color: #f8f8f8;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-size: 0.9em;
+}
+
+pre {
+    background-color: #f8f8f8;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles spécifiques pour les sections du rapport */
+.etat-esprit {
+    background-color: #f0f7fb;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+}
+
+.taches {
+    background-color: #f7f9f9;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+}
+
+.evaluation {
+    background-color: #f9f7f0;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+}
+
+.recommandations {
+    background-color: #f0f9f7;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+}
+
+.commentaires {
+    background-color: #f7f0f9;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+}
+
+/* Style pour les alertes */
+.alerte {
+    background-color: #fff5f5;
+    border-left: 4px solid #e74c3c;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Style pour les notes */
+.note {
+    background-color: #fffde7;
+    border-left: 4px solid #f1c40f;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 0 5px 5px 0;
+}

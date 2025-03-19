@@ -1,0 +1,60 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{setspace}
+
+% Configuration de la géométrie de la page
+\geometry{a4paper, margin=2.5cm}
+
+% Configuration des polices
+\setmainfont{Liberation Sans}
+
+% Configuration des couleurs
+\definecolor{titlecolor}{RGB}{41, 128, 185}
+\definecolor{sectioncolor}{RGB}{52, 152, 219}
+\definecolor{subsectioncolor}{RGB}{22, 160, 133}
+
+% Configuration des titres
+\titleformat{\section}
+  {\color{sectioncolor}\Large\bfseries}
+  {\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}
+  {\color{subsectioncolor}\large\bfseries}
+  {\thesubsection}{1em}{}
+
+% Configuration des en-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Rapport Hebdomadaire}
+\fancyhead[R]{\today}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Configuration des liens
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+}
+
+% Configuration des listes
+\setlist{noitemsep, topsep=0pt}
+\setstretch{1.2}
+
+% Définition de tightlist pour pandoc
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+
+$body$
+
+\end{document}

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>rapport_hebdomadaire_19_03_2025.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%F0%9F%93%8A-rapport-hebdomadaire---19-mars-2025">📊 Rapport Hebdomadaire - 19 mars 2025</h1>
+<h2 id="1-%F0%9F%8C%A1%EF%B8%8F-%C3%A9tat-desprit-de-l%C3%A9quipe">1. 🌡️ État d'Esprit de l'Équipe</h2>
+<h3 id="jean-michel-adelin">Jean Michel ADELIN</h3>
+<ul>
+<li>État d'esprit : 🌤️ Bon (en amélioration)</li>
+<li>Points positifs :
+<ul>
+<li>Communication avec le GESIC concernant le connecteur URCOOPA nettement améliorée</li>
+<li>Livraison de l'API par le GESIC prévue au 1er avril 2025</li>
+<li>Progression continue sur l'intégration de la base article (v16.5)</li>
+</ul>
+</li>
+<li>Points négatifs : Une révision sera nécessaire pour la V17 de la base article</li>
+<li>Charge de travail : Réorientée vers l'intégration/test base article avec le soutien de Raphaël et Jimmy</li>
+<li>Prochains défis : 15 jours de développement post-livraison API + 7 jours de test pour le connecteur URCOOPA</li>
+</ul>
+<h3 id="jimmy-chabot">Jimmy CHABOT</h3>
+<ul>
+<li>État d'esprit : ☀️ Excellent</li>
+<li>Points positifs :
+<ul>
+<li>Délégation des connecteurs SIFA/RDT à Arkeup, libérant du temps</li>
+<li>Plus d'attente d'endpoint car connecteur entièrement géré par Arkeup</li>
+<li>Intégration à l'équipe d'agrégation base article</li>
+<li>Création et intégration du nouveau module paiement 3x</li>
+</ul>
+</li>
+<li>Points négatifs : Aucun notable</li>
+<li>Charge de travail : Optimisée, migration en cours vers les sujets prioritaires</li>
+<li>En cours : Soutien au développement connecteur URCOOPA prévu</li>
+</ul>
+<h3 id="sarah-maillot">Sarah MAILLOT</h3>
+<ul>
+<li>État d'esprit : ☀️ Excellent</li>
+<li>Points positifs :
+<ul>
+<li>Réseau Wifi complètement cartographié</li>
+<li>Amélioration des communications avec les services (facturation)</li>
+<li>Réorganisation efficace des sujets parallèles</li>
+</ul>
+</li>
+<li>Points négatifs : Aucun notable</li>
+<li>Charge de travail : Stable, réorientation vers le soutien au lancement Odoo</li>
+<li>Tâches supplémentaires : Rédaction d'un rapport sur les améliorations potentielles du réseau Wifi</li>
+</ul>
+<h3 id="raphael-auberlet">Raphael AUBERLET</h3>
+<ul>
+<li>État d'esprit : 🌤️ Bon (en amélioration)</li>
+<li>Points positifs :
+<ul>
+<li>Tensions redescendues</li>
+<li>Amélioration de la communication avec la direction</li>
+<li>Finalisation de la migration du plan de charge avec gestion centralisée par Anaïs</li>
+<li>Maintien efficace de la cohésion d'équipe</li>
+</ul>
+</li>
+<li>Points négatifs : Intervention chirurgicale toujours prévue le 24/03 (indisponibilité 1 à 3 jours)</li>
+<li>Charge de travail : Mieux maîtrisée, communication améliorée</li>
+<li>Note importante : Possibilité d'une seconde intervention dans les mois à venir</li>
+</ul>
+<h2 id="2-%F0%9F%8E%AF-suivi-des-t%C3%A2ches">2. 🎯 Suivi des Tâches</h2>
+<h3 id="a-t%C3%A2ches-finalis%C3%A9es-en-avance-%F0%9F%8E%89">a. Tâches Finalisées en Avance 🎉</h3>
+<ul>
+<li>Délégation des connecteurs RDT/SIFA à Arkeup (100%, gain de temps significatif)</li>
+<li>Migration du plan de charge avec gestion centralisée (100%, amélioration du suivi)</li>
+<li>Vérification réseau WIFI &amp; zones (100%, rapport en cours de rédaction)</li>
+<li>Validation Caisse Odoo par nos équipes (100%, prêt pour déploiement)</li>
+<li>Nouveau module paiement 3x créé par Jimmy et intégré (100%, fonctionnel)</li>
+<li>Documentation sur le serveur Odoo.sh et on-premise (100%, accessible à l'équipe)</li>
+<li>Documentation Backup/Sauvegarde &amp; Migrations (100%, procédures établies)</li>
+<li>Script d'exfiltration des sauvegardes (100%, sécurisation des données)</li>
+</ul>
+<h3 id="b-progr%C3%A8s-remarquables-%F0%9F%93%88">b. Progrès Remarquables 📈</h3>
+<ul>
+<li>CDC/DEV Connecteur Vusion (75%, progression rapide)</li>
+<li>Communication avec le GESIC (amélioration significative, livraison API prévue)</li>
+<li>Intégration de l'équipe d'agrégation base article (synergie efficace)</li>
+<li>Migration des documentations vers le nouveau format wiki (progression constante)</li>
+</ul>
+<h3 id="c-t%C3%A2ches-en-cours-%F0%9F%94%84">c. Tâches en Cours 🔄</h3>
+<ul>
+<li>Base article (sujet prioritaire, finalisé à 60%, élargissement des ressources avec l'intégration de Jimmy)</li>
+<li>Affinage du plan de charge sur la prod ODOO (80%, finalisation en cours)</li>
+<li>Documentation sur la sécurisation et application des politiques de sécurité (70%, en bonne voie)</li>
+<li>Préparation au déploiement Odoo sur les caisses en production (50%, selon planning)</li>
+</ul>
+<h3 id="d-t%C3%A2ches-en-retard-%E2%9A%A0%EF%B8%8F">d. Tâches en Retard ⚠️</h3>
+<ul>
+<li>Connecteur URCOOPA (retard en cours de résolution, livraison API prévue au 1er avril)
+<ul>
+<li>Causes : Dépendance externe (GESIC)</li>
+<li>Solutions : Communication améliorée, planification précise post-livraison API (15j dev + 7j test)</li>
+<li>Impact : Justifie la recommandation de report de la date de lancement</li>
+</ul>
+</li>
+</ul>
+<h3 id="e-t%C3%A2ches-%C3%A0-venir-%F0%9F%95%97">e. Tâches à Venir 🕗</h3>
+<ul>
+<li>Application des politiques de sécurité (début prévu semaine prochaine)</li>
+<li>Finalisation des documentations (planifiée pour fin mars)</li>
+<li>Migration des documentations anciennes vers https://wiki.groupe-sicalait.fr (début avril)</li>
+<li>Déploiement global de Odoo sur les caisses en PRODUCTION (selon calendrier révisé)</li>
+<li>Développement connecteur URCOOPA post-livraison API (début avril, durée estimée 15 jours)</li>
+<li>Tests connecteur URCOOPA (mi-avril, durée estimée 7 jours)</li>
+</ul>
+<h2 id="3-%F0%9F%93%8A-%C3%A9valuation-globale-du-projet">3. 📊 Évaluation Globale du Projet</h2>
+<ul>
+<li>
+<p>Synthèse : Amélioration significative de la situation avec résolution de plusieurs blocages et finalisation de tâches importantes. La délégation des connecteurs SIFA/RDT à Arkeup et l'amélioration de la communication avec le GESIC sont des avancées majeures. Cependant, le calendrier reste serré pour le connecteur URCOOPA.</p>
+</li>
+<li>
+<p>Répartition :</p>
+<ul>
+<li>55% tâches terminées (progression de +10% depuis le rapport du 12/03)</li>
+<li>30% tâches en cours</li>
+<li>15% tâches à venir</li>
+</ul>
+</li>
+<li>
+<p>Points de vigilance :</p>
+<ul>
+<li>Dépendance à la livraison de l'API GESIC au 1er avril</li>
+<li>Délai serré pour le développement et test du connecteur URCOOPA</li>
+<li>Indisponibilité temporaire de Raphaël Auberlet (24/03, 1-3 jours)</li>
+<li>Nécessité de révision pour la base article V17</li>
+</ul>
+</li>
+<li>
+<p>Opportunités d'optimisation :</p>
+<ul>
+<li>Synergie créée par l'intégration de Jimmy à l'équipe base article</li>
+<li>Amélioration des processus de documentation avec migration vers wiki</li>
+<li>Meilleure communication avec les parties prenantes externes</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-%F0%9F%92%A1-recommandations-et-actions">4. 💡 Recommandations et Actions</h2>
+<ol>
+<li>
+<p>Actions Prioritaires :</p>
+<ul>
+<li>Préparation minutieuse pour le développement du connecteur URCOOPA dès réception de l'API</li>
+<li>Finalisation de l'affinage du plan de charge sur la prod ODOO</li>
+<li>Poursuite de l'amélioration de la communication avec la direction</li>
+<li>Organisation de la continuité pendant l'absence de Raphaël (24/03)</li>
+</ul>
+</li>
+<li>
+<p>Optimisations Suggérées :</p>
+<ul>
+<li>Mobilisation maximale sur la base article avec l'équipe élargie</li>
+<li>Accélération de la migration des documentations vers le wiki</li>
+<li>Anticipation des tests du connecteur URCOOPA pour optimiser le temps post-développement</li>
+</ul>
+</li>
+<li>
+<p>Recommandation Majeure :</p>
+<ul>
+<li><strong>Report de la date de lancement au 25 mai 2025</strong> (au lieu du 4 mai)</li>
+<li>Justifications :
+<ul>
+<li>Livraison API URCOOPA prévue au 1er avril</li>
+<li>Nécessité de 15 jours de développement + 7 jours de test post-livraison</li>
+<li>Besoin d'une marge de sécurité pour les imprévus</li>
+<li>Importance d'un lancement sans mode dégradé sur le connecteur URCOOPA</li>
+</ul>
+</li>
+<li>Plan de contingence : Si le lancement au 25 mai s'avère impossible, envisager un report à septembre pour minimiser les risques</li>
+</ul>
+</li>
+<li>
+<p>Mesures de Mitigation des Risques :</p>
+<ul>
+<li>Maintien d'une communication étroite avec le GESIC pour suivre l'avancement de l'API</li>
+<li>Préparation en amont du développement URCOOPA pour maximiser l'efficacité dès réception</li>
+<li>Documentation approfondie des processus pour faciliter la continuité en cas d'absence</li>
+</ul>
+</li>
+</ol>
+<h2 id="5-%F0%9F%93%9D-commentaires-sur-les-avancements">5. 📝 Commentaires sur les Avancements</h2>
+<ul>
+<li>L'équipe démontre une excellente capacité d'adaptation face aux défis, avec une réorganisation efficace des priorités et des ressources</li>
+<li>La délégation des connecteurs SIFA/RDT à Arkeup représente une décision stratégique judicieuse qui libère des ressources précieuses</li>
+<li>L'amélioration de la communication avec les parties prenantes externes (GESIC, services de facturation) facilite l'avancement global</li>
+<li>La finalisation de plusieurs documentations et procédures renforce la robustesse du projet et sa pérennité</li>
+<li>La migration vers le wiki centralisé (https://wiki.groupe-sicalait.fr) constitue une avancée significative pour la gestion des connaissances</li>
+<li>Le nouveau calendrier proposé (lancement au 25 mai) offre un équilibre optimal entre ambition et réalisme, tout en préservant la qualité du déploiement</li>
+</ul>
+<p>⚠️ <strong>Point d'Attention</strong> : Bien que la situation s'améliore considérablement, le connecteur URCOOPA reste le point critique du projet, justifiant pleinement la recommandation de report du lancement.</p>
+<p>📎 Le PDF complet de ce rapport est joint pour référence. N'hésitez pas à consulter également le plan de charge détaillé sur la prod Odoo pour une vision plus granulaire de l'avancement.</p>
+
+</body>
+</html>
